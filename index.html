@@ -9,43 +9,57 @@
 <body>
     <div class="container">
         <div class="left-side-container">
-            <img src="img/spaceship7.jpg" alt="spaceship">
+            <img src="img/spaceship9.jpg" alt="spaceship">
+           
             <div class="text-block">
-                <h1>TITLE</h1>
+                <span>
+                    ARE YOU READY FOR A NEW BEGINNING?
+                </span>
+                <h5 id="title">CelestialVoyage</h5>
             </div>
         </div>
         <div class="right-side-container">
+            <div class="description">
+                <p>Begin your new life with us.</p>
+                <p>There are plenty of people await you.</p>
+            </div>
             <div class="signUpForm">
-                <form action="" method="post">
-                    <div>
+                <form action="#" method="" id="form">
+                    <div class="left-part-form">
                         <div>
-                            <label for=""></label>
-                            <input type="text" name="" id="">
+                            <label for="firstName">FIRST NAME</label>
+                            <input type="text" name="firstName" id="firstName" required>
                         </div>
                         <div>
-                            <label for=""></label>
-                            <input type="text" name="" id="">
+                            <label for="email">EMAIL</label>
+                            <input type="email" name="email" id="email" required>
                         </div>
                         <div>
-                            <label for=""></label>
-                            <input type="text" name="" id="">
-                        </div>
-                    </div>
-                    <div>
-                        <div>
-                            <label for=""></label>
-                            <input type="text" name="" id="">
-                        </div>
-                        <div>
-                            <label for=""></label>
-                            <input type="text" name="" id="">
-                        </div>
-                        <div>
-                            <label for=""></label>
-                            <input type="text" name="" id="">
+                            <label for="password">PASSWORD</label>
+                            <input type="password" name="password" id="password" required>
                         </div>
                     </div>
+                    <div class="right-part-form">
+                        <div>
+                            <label for="lastName">LAST NAME</label>
+                            <input type="text" name="lastName" id="lastName" required>
+                        </div>
+                        <div>
+                            <label for="phoneNumber">PHONE NUMBER</label>
+                            <input type="tel" name="phoneNumber" id="phoneNumber" required>
+                        </div>
+                        <div>
+                            <label for="confirmPassword">CONFIRM PASSWORD</label>
+                            <input type="password" name="confirmPassword" id="confirmPassword" required>
+                        </div>
+                    </div>
+                    
                 </form>
+                
+            </div>
+            <div class="submit-section">
+                <button type="submit" form="form">SIGN UP</button>
+                <span>Already have an account? <a href="#">Log In</a></span>
             </div>
         </div>
     </div>
