@@ -101,7 +101,7 @@ input {
 .submit-section {
     position: relative;
     color:white;
-    width: 100%;
+    width: 90%;
     top: 1rem;
     left: 3rem;
     display: flex;
@@ -172,7 +172,7 @@ input {
         /* min-width: 18rem; */
     }
     .right-side-container {
-        height: 80vh;
+        height: 70vh;
         width: 100vw;
         justify-content: start;
 
@@ -193,7 +193,17 @@ input {
         font-size: 2.2rem;
     }
 }
-
+@media screen and (max-width:395px){
+    form {
+        gap: 3rem;
+    }
+    .description{
+        font-size: 1.9rem;
+    }
+    input{
+        width: 10rem;
+    }
+}
 input:focus:invalid {
     border: 2px solid red;
 }
